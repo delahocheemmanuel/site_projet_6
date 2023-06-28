@@ -1,15 +1,12 @@
 import React from "react";
-import './App.scss';
 import { Routes, Route } from "react-router-dom";
-import Home from "./assets/Pages/Home";
-import About from "./assets/Pages/About";
-import NotFound from "./assets/Pages/NotFound";
-import Accommodation from "./assets/Pages/Accommodation";
-import { data } from "./assets/Data/Data";
+import NotFound from "../Pages/NotFound";
+import About from "../Pages/About";
+import Home from "../Pages/Home";
+import { data } from "./Data/Data";
+import Accommodation from "../Pages/Accommodation";
 
-
-function App() {
-
+const MainRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -25,5 +22,4 @@ function App() {
   );
 };
 
-
-export default App;
+export default MainRoutes;
