@@ -5,7 +5,7 @@ import Home from "./assets/Pages/Home";
 import About from "./assets/Pages/About";
 import NotFound from "./assets/Pages/NotFound";
 import Accommodation from "./assets/Pages/Accommodation";
-import { data } from "./assets/Data/Data";
+import { data } from "./assets/Data/Datas";
 
 
 function App() {

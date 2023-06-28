@@ -3,6 +3,7 @@ import Banner from "../Components/Banner";
 import styles from "../Styles/home.module.scss";
 
 
+
 const Home = () => { 
     return (
       <main className={styles.home}>

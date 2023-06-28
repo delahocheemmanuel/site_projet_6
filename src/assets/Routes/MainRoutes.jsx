@@ -3,8 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import NotFound from "../Pages/NotFound";
 import About from "../Pages/About";
 import Home from "../Pages/Home";
-import { data } from "./Data/Data";
 import Accommodation from "../Pages/Accommodation";
+import { data } from "./Data/Data";
+
 
 const MainRoutes = () => {
   return (
