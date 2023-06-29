@@ -1,49 +1,19 @@
 import React from "react";
-import styles from "../Styles/header.module.scss";
-
-import { Link } from "react-router-dom";
+import "../../assets/Styles/header.scss";
+import logo from "../../assets/images/logo/logo-kasa-header.svg";
+import { Link,NavLink } from "react-router-dom";
 
 const Header = () => {
 
     return (
-        <header className={styles.header}>
-        <nav className={styles.nav}>
-            <Link to="/" className={styles.logo}>
-            <img src="/images/logo.png" alt="logo" />
-            </Link>
-            <ul className={styles.navList}>
-            <li className={styles.navItem}>
-                <Link to="/" className={styles.navLink}>
-                Accueil
-                </Link>
-            </li>
-            <li className={styles.navItem}>
-                <Link to="/about" className={styles.navLink}>
-                A propos
-                </Link>
-            </li>
-            <li className={styles.navItem}>
-                <Link to="/accommodation" className={styles.navLink}>
-                Logements
-                </Link>
-            </li>
-            </ul>
+        <header>
+        <Link to="/" ><img src={logo} alt="Logo Kasa" className="logo" /></Link>
+        <nav className="menu">
+          <NavLink to="/" >Accueil</NavLink>
+          <NavLink to="/à-propos" >À propos</NavLink>
         </nav>
-        </header>
+      </header>
     );
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 export default Header;

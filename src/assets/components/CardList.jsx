@@ -1,17 +1,18 @@
 import React from "react";
 import { data } from "../Data/Datas";
 import { Link } from "react-router-dom";
-import styles from "../Styles/cardList.module.scss";
+import "../Styles/cardlist.scss";
+
 
 function CardList() {
   return (
-    <div className={styles["card-list"]}>
+    <div className={["card-list"]}>
       {data.map((card) => (
-        <div key={card.id} className={styles["card-list-item"]}>
-          <Link to={`/cards/${card.id}`}>
-            <div className={styles["card-list-content"]}>
+        <div key={card.id} className={["card-list-item"]}>
+          <Link to={`/Accommodation/${card.id}`}>
+            <div className={["card-list-content"]}>
               <img src={card.cover} alt={card.title} />
-              <h2>{card.title}</h2>
+              <p className="card-title" >{card.title}</p>
             </div>
           </Link>
         </div>

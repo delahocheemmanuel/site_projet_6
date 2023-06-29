@@ -1,19 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./cardList.module.scss";
+import { useParams } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+import { data } from "../Data/Datas";
+import "../.assets/Styles/card.scss";
 
 
-const Card = () => {
+function Card() {
+    const {cardId} = useParams();
+    const card = data.find((card) => card.id === cardId);
 
-    return (
-        <div>
-            <h1>Card</h1>
-            
-            
-        </div>
-    );
+    if (!card) {
+        return <Navigate to="/NotFound" />;
+    }else{
+        return (
+            <div className={["card"]}>
+                <div className={["card-content"]}>
+                    <img src={card.cover} alt={card.title} />
+                    <h2>{card.title}</h2>
+                    <p>{card.description}</p>
+                    <Link to="/Accommodation">Retour</Link>
+                </div>
+            </div>
+        );
+    }
 
-
+    
 }
 
 

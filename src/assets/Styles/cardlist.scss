@@ -1,0 +1,29 @@
+@import "./general.scss";
+
+
+.card-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}   
+.card-list-item{
+
+}
+
+.card-list-content{
+
+    width:100%;
+    img{
+        width: 200px;}
+}
+.card-title{
+
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
