@@ -1,16 +1,21 @@
 import React from "react";
 import Banner from "../Components/Banner";
-import styles from "../Styles/home.module.scss";
+import CardList from "../Components/CardList";
+import bannerImage from "../../assets/images/banner/home__banner.png";
+import "../Styles/home.module.scss";
 
 
 
 const Home = () => { 
+
     return (
-      <main className={styles.home}>
-        <Banner
-          text="Chez vous, partout et ailleurs"
-          bannerType="homeBanner"
+      <main>
+        <Banner 
+          imgSrc={bannerImage}
+          imgText="Chez vous, partout et ailleurs"
+          imgAlt="Rochers au bord de la mer"
         />
+        <CardList />
       </main>
     );
   };

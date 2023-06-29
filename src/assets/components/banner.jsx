@@ -1,17 +1,15 @@
 import React from "react";
-import styles from "../Styles/banner.module.scss";
+import "../Styles/banner.scss";
 
-const Banner = ({ text,image,descriptionImg, bannerType }) => {
-
+function Banner(props) {
+    const {imgSrc, imgAlt} = props;
+      
     return (
-        <section className={`${styles.banner} ${bannerType === "homeBanner" ? styles.homeBanner : ""
-        }`}
-        >
-        <img src={image} className={styles.bannerImg} alt={descriptionImg} />
-        <div className={styles.overlay}></div>
-        <h3>{text}</h3>
-        </section>
-    );
+        <div className="banner">
+          <img src={imgSrc} alt={imgAlt}/>
+          <h1>Chez vous, partout et ailleurs</h1>
+        </div>
+      )
     }
-
-export default Banner;
+    
+    export default Banner;
