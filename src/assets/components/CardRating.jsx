@@ -1,6 +1,6 @@
 import React from "react";
-import starRed from "../images/star-red.svg";
-import starGrey from "../images/star-grey.svg";
+import starRed from "../images/icon/star-red.svg";
+import starGrey from "../images/icon/star-grey.svg";
 
 function CardRating(props) {
     const {rating} = props;

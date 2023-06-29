@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../Components/Card"
+import Card from "../Components/Card"
 
 const CardLocation = () => {
 
@@ -8,4 +8,4 @@ const CardLocation = () => {
     )
 }
 
-export default CardLocation
+export default CardLocation;

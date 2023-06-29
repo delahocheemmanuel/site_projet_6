@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../Components/Card"
+import Card from "./Card"
 
 const CardEquipements = () => {
 
@@ -13,4 +13,4 @@ const CardEquipements = () => {
     )
 }
 
-export default CardEquipements
+export default CardEquipements;

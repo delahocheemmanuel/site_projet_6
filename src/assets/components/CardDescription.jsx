@@ -1,5 +1,5 @@
-import React from "react";
-import Card from "../../Components/Card"
+
+import Card from "../Components/Card"
 
 const CardDescription = () => {
     return (
@@ -7,4 +7,4 @@ const CardDescription = () => {
     )
 }
 
-export default CardDescription
+export default CardDescription;
