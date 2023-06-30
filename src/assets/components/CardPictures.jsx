@@ -1,34 +1,53 @@
-import React, { useState } from 'react';
-import { data } from "../Data/Datas";
+import React, { useState } from "react";
 
-const Gallery = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = data.images;
+function CardPictures(props) {
+  const { imgSrc, imgAlt } = props;
+  const [imageIndex, setImageIndex] = useState(0);
 
-  const handleNext = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
 
-  const handlePrev = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+  function nextPicture() {
+    if (imageIndex === imgSrc.length - 1) {
+      setImageIndex(0);
+    } else {
+      setImageIndex(imageIndex + 1);
+    }
+  }
+
+  
+  function previousPicture() {
+    if (imageIndex === 0) {
+      setImageIndex(imgSrc.length - 1);
+    } else {
+      setImageIndex(imageIndex - 1);
+    }
+  }
+
+  if (imgSrc.length === 1) {
+    return (
+      <div className="slide__show">
+        <img src={imgSrc[imageIndex]} alt={imgAlt} className="slide__show-image" />
+      </div>
     );
-  };
-
-  return (
-    <div className="gallery">
-      <div className="image-container">
-      <img src={images[currentImageIndex]} alt={`${currentImageIndex + 1}`} />
+  } else {
+    return (
+      <div>
+        <div className="slide__show">
+          <img src={imgSrc[imageIndex]} alt={imgAlt} className="slide__show-image" />
+          <button className="slide__show-button" onClick={previousPicture}>
+            Précédent
+          </button>
+          <button className="slide__show-button" onClick={nextPicture}>
+            Suivant
+          </button>
+        </div>
+        <div className="slide__show-count">
+          <p>
+            {imageIndex + 1}/{imgSrc.length}
+          </p>
+        </div>
       </div>
-      <div className="controls">
-        <button onClick={handlePrev}>&larr;</button>
-        <span>{`${currentImageIndex + 1}/${images.length}`}</span>
-        <button onClick={handleNext}>&rarr;</button>
-      </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
-export default Gallery;
-
-
+export default CardPictures;

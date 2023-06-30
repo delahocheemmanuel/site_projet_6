@@ -3,7 +3,7 @@ import Banner from "../Components/Banner";
 import Header from "../Components/Hearder";
 import CardList from "../Components/CardList";
 import bannerImage from "../../assets/images/banner/home__banner.png";
-import "../Styles/home.module.scss";
+import "../Styles/home.scss";
 import Footer from "../Components/Footer";
 
 

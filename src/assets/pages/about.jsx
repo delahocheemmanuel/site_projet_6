@@ -13,7 +13,7 @@ function About() {
           imgSrc={bannerImage}
           imgAlt="Paysage de montagnes"
         />
-        <div className="caroussel__wrapper-about">
+        <div className="collapse__wrapper-about">
           <Collapse 
             categoryName="Fiabilité"
             categoryDetails="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
