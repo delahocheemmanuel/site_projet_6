@@ -1,10 +1,10 @@
-.caroussel {
+.collapse {
     flex-direction: column;
     align-items: center;
     background-color: #F6F6F6;
     width: 83%;
   
-    .caroussel__title {
+    .collapse__title {
       border: 0;
       display: flex;
       flex-direction: row;
@@ -27,7 +27,7 @@
       }
     }
   
-    .caroussel__description {
+    .collapse__description {
       background-color: #F6F6F6;
       /* height: fit-content; */
   

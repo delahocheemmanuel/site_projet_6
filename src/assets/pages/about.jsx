@@ -2,10 +2,13 @@ import Banner from "../Components/Banner";
 import bannerImage from "../images/banner/about__banner.png";
 import Collapse from "../Components/Collapse";
 import "../Styles/about.scss"
+import Header from "../Components/Hearder";
+import Footer from "../Components/Footer";
 
 function About() {
     return (
       <main>
+        <Header />
         <Banner 
           imgSrc={bannerImage}
           imgAlt="Paysage de montagnes"
@@ -36,6 +39,7 @@ function About() {
             "
           />
         </div>
+        <Footer />
       </main>
     )
   }
