@@ -4,12 +4,14 @@ header {
     padding: 35px 7% 35px 7%;
     display: flex;
     flex-direction: row;
+    
     justify-content: space-between;
     align-items: center;
     height: 60px;
   
     .logo {
       height: 100%;
+      width: 75%;
     }
   
     .menu {
@@ -18,55 +20,6 @@ header {
       justify-content: flex-end;
       gap: 50px;
   
-      a {
-        color: #FF6060;
-        font-size: 24px;
-        font-weight: 500;
-        text-decoration: none;
-      }
     }
-  
-    a.active {
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 0.1em;
-      -webkit-text-underline-offset: 0.1em;
-      -moz-text-underline-offset: 0.1em;
-      -ms-text-underline-offset: 0.1em;
-    }
-  
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-      height: 55px;
-  
-      a:first-child {
-        height: 100%;
-      }
-  
-      .menu {
-        gap: 30px;
-  
-        a {
-          font-size: 20px;
-        }
-      }
-    }
-  
-    @media screen and (max-width: 480px) {
-      padding: 5% 5% 5% 5%;
-      height: 50px;
-  
-      a:first-child {
-        height: 100%;
-      }
-  
-      .menu {
-        gap: 15px;
-  
-        a {
-          font-size: 12px;
-          text-transform: uppercase;
-        }
-      }
-    }
+
   }
-  

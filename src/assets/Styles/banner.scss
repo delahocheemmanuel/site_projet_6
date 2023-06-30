@@ -15,6 +15,7 @@
     height: 100%;
     border-radius: 25px;
     object-fit: cover;
+    padding: 10px;
     filter: brightness(0.75);
   }
 
@@ -43,4 +44,16 @@
       font-size: 24px;
     }
   }
+}
+// Styles de base pour les appareils mobiles
+// Aucune @media query nécessaire, car c'est la configuration par défaut
+
+// Styles pour les tablettes (768px et plus)
+@media screen and (min-width: 768px) {
+  /* Ajoutez vos styles spécifiques pour les tablettes ici */
+}
+
+// Styles pour les ordinateurs de bureau (992px et plus)
+@media screen and (min-width: 992px) {
+  /* Ajoutez vos styles spécifiques pour les ordinateurs de bureau ici */
 }

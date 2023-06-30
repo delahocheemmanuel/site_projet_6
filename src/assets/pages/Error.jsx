@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../images/logo/404.svg";
 import { Link } from "react-router-dom";
 import "../Styles/error.scss";
 const Error = () => {
@@ -8,9 +7,9 @@ const Error = () => {
 
     return (
         <div className="error" >
-            <img src={logo} alt="erreur 404" className="error404" />
-            <p>Oups! La page que vous demandez n'existe pas.</p>
-            <Link to="/" >Retourner sur la page d'accueil</Link>
+            <h1 className="error__title" >404</h1>
+            <p className="error__description" >Oups! La page que vous demandez n'existe pas.</p>
+            <Link  className="error__link" to="/" >Retourner sur la page d'accueil</Link>
         </div>
     );
 }

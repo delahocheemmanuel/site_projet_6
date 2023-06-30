@@ -1,3 +1,5 @@
+@import "./general.scss";
+
 .error {
     width: 100%;
     color: #FF6060;
@@ -6,19 +8,19 @@
     align-items: center;
     padding: 70px 0;
   
-    .error-title {
+    .error__title {
       font-size: 260px;
       font-weight: 700;
       margin: 0 0 20px 0;
       height: fit-content;
     }
   
-    .error-description {
+    .error__description {
       font-size: 32px;
       font-weight: 500;
     }
   
-    a.error-link {
+    link {
       font-size: 16px;
       font-weight: 500;
       color: #FF6060;

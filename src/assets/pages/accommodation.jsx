@@ -10,14 +10,13 @@ import CardEquipements from "../Components/CardEquipements";
 import CardRating from "../Components/CardRating";
 import CardPictures from "../Components/CardPictures";
 import CardHost from "../Components/CardHost";
+const pictures = data.pictures;
 
 function Accommodation() {
   const { cardId } = useParams();
   const card = data.find((card) => card.id === cardId);
-
-  if (!card) {
-    return <Navigate to="/error" />;
-  }
+  
+  console.log(card);
 
   return (
     <main>

@@ -1,7 +1,32 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+    padding:10px;
+}
 
 $main-color: #ff6060;
 $max-width-desktop: 1240px;
 $max-width-tablet: 992px;
 $max-width-mobile: 768px;
 $main-font: "Montserrat", sans-serif;
+
+// Styles de base pour les appareils mobiles
+// Aucune @media query nécessaire, car c'est la configuration par défaut
+
+// Styles pour les tablettes (768px et plus)
+@media screen and (min-width: 768px) {
+    /* Ajoutez vos styles spécifiques pour les tablettes ici */
+  }
+  
+  // Styles pour les ordinateurs de bureau (992px et plus)
+  @media screen and (min-width: 992px) {
+    /* Ajoutez vos styles spécifiques pour les ordinateurs de bureau ici */
+  }
+  
