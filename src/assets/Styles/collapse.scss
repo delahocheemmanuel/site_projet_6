@@ -3,6 +3,7 @@
     align-items: center;
     background-color: #F6F6F6;
     width: 83%;
+    
   
     .collapse__title {
       border: 0;
@@ -24,6 +25,10 @@
       img {
         width: 24px;
         height: 13px;
+        :active {
+          transform: rotate(180deg);
+        }
+        
       }
     }
   
@@ -38,4 +43,6 @@
       }
     }
   }
-  
+  .arrowDown{
+    transform: rotate(180deg);
+  }
