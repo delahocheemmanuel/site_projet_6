@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/Styles/header.scss";
 import logo from "../../assets/images/logo/logo-kasa-header.svg";
-import { Link,NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -9,8 +9,8 @@ const Header = () => {
         <header>
         <Link to="/" ><img src={logo} alt="Logo Kasa" className="logo" /></Link>
         <nav className="menu">
-          <NavLink to="/" >Accueil</NavLink>
-          <NavLink to="/à-propos" >À propos</NavLink>
+          <Link to="/" >Accueil</Link>
+          <Link to="/About" >À propos</Link>
         </nav>
       </header>
     );

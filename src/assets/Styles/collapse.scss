@@ -1,0 +1,41 @@
+.caroussel {
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    width: 83%;
+  
+    .caroussel__title {
+      border: 0;
+      display: flex;
+      flex-direction: row;
+      background-color: #FF6060;
+      width: 100%;
+      height: 45px;
+      padding: 5px 20px;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+  
+      p {
+        margin: 0;
+        color: #FFFFFF;
+      }
+  
+      img {
+        width: 24px;
+        height: 13px;
+      }
+    }
+  
+    .caroussel__description {
+      background-color: #F6F6F6;
+      /* height: fit-content; */
+  
+      &.highlighted {
+        color: #FF6060;
+        font-size: 17px;
+        font-weight: 400;
+      }
+    }
+  }
+  
