@@ -1,6 +1,6 @@
 @import "./general.scss";
 
-.card-list {
+.card__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-.card-list-item {
+.card__list-item {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@
   }
 }
 
-.card-list-content {
+.card__list-content {
   width: 335px;
   height: 255px;
 
@@ -72,7 +72,7 @@
   }
 }
 
-.card-title {
+.card__title {
   font-size: 1rem;
   font-weight: bold;
   text-align: center;

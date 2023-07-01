@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Styles/cardpictures.scss";
 
 function CardPictures(props) {
   const { imgSrc, imgAlt } = props;
