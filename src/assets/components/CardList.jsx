@@ -2,7 +2,7 @@ import React from "react";
 import { data } from "../Data/Datas";
 import { Link } from "react-router-dom";
 
-import "../Styles/cardlist.scss";
+import "../Styles/cardlist.sass";
 
 function CardList() {
   

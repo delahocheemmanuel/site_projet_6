@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import arrowDown from "../images/icon/arrow__down.svg";
 import arrowUp from "../images/icon/arrow__up.svg";
-import "../Styles/collapse.scss";
+import "../Styles/collapse.sass";
 
 function Collapse(props) {
   const {categoryName, categoryDetails} = props;

@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/banner.scss";
+import "../Styles/banner.sass";
 
 function Banner(props) {
     const {imgSrc, imgAlt} = props;

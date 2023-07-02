@@ -1,7 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import '../Styles/accommodation.scss'
-import '../Styles/cardrating.scss'
+
+import '../Styles/accommodation.sass'
+import '../Styles/cardrating.sass'
 import { data } from '../Data/Datas'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'

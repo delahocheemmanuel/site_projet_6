@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import left from "../images/icon/arrow__left.svg";
 import right from "../images/icon/arrow__right.svg";
-import "../Styles/cardpictures.scss";
+import "../Styles/cardpictures.sass";
 
 function CardPictures(props) {
   const { imgSrc, imgAlt } = props;

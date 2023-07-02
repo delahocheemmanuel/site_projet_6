@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/footer.scss";
+import "../Styles/footer.sass";
 import logo from "../../assets/images/logo/logo-kasa-footer.svg";
 
 const Footer = () => {

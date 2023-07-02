@@ -3,7 +3,7 @@ import Banner from '../Components/Banner'
 import Header from '../Components/Header'
 import CardList from '../Components/CardList'
 import bannerImage from '../../assets/images/banner/home__banner.png'
-import '../Styles/home.scss'
+import '../Styles/home.sass'
 import Footer from '../Components/Footer'
 
 const Home = () => {

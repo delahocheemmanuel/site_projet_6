@@ -1,7 +1,7 @@
 import Banner from '../Components/Banner'
 import bannerImage from '../images/banner/about__banner.png'
 import Collapse from '../Components/Collapse'
-import '../Styles/about.scss'
+import '../Styles/about.sass'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 
