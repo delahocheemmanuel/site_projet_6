@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../Components/Banner";
-import Header from "../Components/Hearder";
+import Header from "../Components/Header";
 import CardList from "../Components/CardList";
 import bannerImage from "../../assets/images/banner/home__banner.png";
 import "../Styles/home.scss";
@@ -11,17 +11,20 @@ import Footer from "../Components/Footer";
 const Home = () => { 
 
     return (
-      
+      <body>
+<Header />
       <main>
-        <Header />
+        
         <Banner 
           imgSrc={bannerImage}
           imgText="Chez vous, partout et ailleurs"
           imgAlt="Rochers au bord de la mer"
         />
         <CardList />
-        <Footer />
+        
       </main>
+      <Footer />
+      </body>
     );
   };
   

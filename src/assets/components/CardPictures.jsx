@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import left from "../images/icon/arrow__left.svg";
+import right from "../images/icon/arrow__right.svg";
 import "../Styles/cardpictures.scss";
 
 function CardPictures(props) {
@@ -31,20 +33,21 @@ function CardPictures(props) {
     );
   } else {
     return (
-      <div>
+      <div className="card__pictures" >
         <div className="slide__show">
           <img src={imgSrc[imageIndex]} alt={imgAlt} className="slide__show-image" />
           <button className="slide__show-button" onClick={previousPicture}>
-            Précédent
+            <img src={left} className="arrow__left" alt="arrow-left" />
           </button>
           <button className="slide__show-button" onClick={nextPicture}>
-            Suivant
+            <img src={right} className="arrow__right" alt="arrow-right" />
           </button>
-        </div>
+        
         <div className="slide__show-count">
           <p>
             {imageIndex + 1}/{imgSrc.length}
           </p>
+        </div>
         </div>
       </div>
     );

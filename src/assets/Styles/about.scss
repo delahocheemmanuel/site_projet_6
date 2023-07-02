@@ -1,5 +1,11 @@
 @import "./general.scss";
 
+main {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .collapse__wrapper-about {
     width: 100%;
     display: flex;

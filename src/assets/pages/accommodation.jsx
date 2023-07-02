@@ -2,10 +2,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "../Styles/accommodation.scss";
+import "../Styles/cardrating.scss";
 import { data } from "../Data/Datas";
-
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 import Collapse from "../Components/Collapse";
-
 import CardPictures from "../Components/CardPictures";
 import CardRating from "../Components/CardRating";
 
@@ -16,7 +17,10 @@ function Accommodation() {
 
 
   return (
+    <body>
+<Header/>
     <main>
+      
       <CardPictures
         imgSrc={card.pictures}
         imgAlt={`Photo de ${card.title} ${card.location}`}
@@ -27,13 +31,16 @@ function Accommodation() {
             <h2>{card.title}</h2>
             <p>{card.location}</p>
           </div>
+          <div className="card__tags">{card.tags}</div>
+          <div className="card__rating-host" >
+          <CardRating rating={card.rating} />
           <div className="card__host">
             <p>{card.host.name}</p>
             <img src={card.host.picture} alt="Host" />
           </div>
-          <div className="card__tags">{card.tags}</div>
-          <CardRating rating={card.rating} />
           
+          </div>
+          <div className="card__desc-equip" >
           <div className="card__description">
             <Collapse
               categoryName="Description"
@@ -43,13 +50,16 @@ function Accommodation() {
           <div className="card__equipements">
             <Collapse
               categoryName="Equipements"
-              categoryDetails={card.equipments}
-
+              categoryDetails={card.equipments}   
             />
+            </div>
+          </div>
           </div>
         </div>
-      </div>
+      
     </main>
+    <Footer/>
+    </body>
   );
 }
 

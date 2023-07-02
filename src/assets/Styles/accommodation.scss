@@ -1,65 +1,107 @@
 @import "./general.scss";
 
-h1 {
-    color: #FF6060;
-    font-size: 36px;
-    font-weight: 500;
-    margin: 0;
-    padding-top: 10;
-}
-
-p {
-    color: #FF6060;
-    margin: 0;
-}
-
-ul {
-    margin:0;
-    list-style: none;
-    padding: 0;
+main {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
 .card__about {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    margin-top: 30px;
-}
-
-.card__informations {
     
-}
-
-
-.card__title {
-    font-size: 24px;
-    font-weight: 500;
-    margin: 0;
-}
-
-.card__host {
-    display: flex;
-    img{
-        height: 64px;
-        width: 64px;
-        border-radius: 100%;
-    }
-}
-.cards__tags {
-    display: flex;
-    
-}
-.card__description {
+    // Ajoutez d'autres styles selon vos besoins
+  }
+  
+  .card__informations {
+    width: 100%;
+  }
+  
+  .card__title {
+    width: 100%;
+  }
+  
+  .card__title h2 {
+    width: 100%;
     font-size: 18px;
     font-weight: 500;
-    margin: 0;
-}
-.card__equipments {
+    color: #f06060
+  }
+  
+  .card__title p {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    color: #f06060;
+  }
+  .card__tags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #f06060;
+    }
+    
+  
+  .card__rating-host{
     display: flex;
     
+    justify-content: space-between;
+    
+    align-items: center;
+
+    width: 100%;
+  }
+  .card__rating {
+    width: 100%;
+    margin-left: 10px;
+
 }
 
+  .card__host {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
 
+    
+  }
+  
+  .card__host p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #f06060;
 
+  }
+  
+  .card__host img {
+    width: 32px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+ 
+  
+  
+  .card__desc-equip {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .card__description {
+    width: 100%;
+  }
+  
+  .card__equipements {
+    width: 100%;
+  }
+  
