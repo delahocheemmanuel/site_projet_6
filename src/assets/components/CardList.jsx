@@ -8,7 +8,7 @@ function CardList() {
   
 
   return (
-    <div className="card-list">
+    <div className="card__list">
       {data.map((card) => {
         
         return (

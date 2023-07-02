@@ -1,27 +1,21 @@
 @import "./general.scss";
 
-header {
-    
+.header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
+    padding: 10px;
+    
+    
     width: 100%;
-    height: 60px;
+    
 
     img{
-      justify-content: flex-start;
-      width: 100%;
+      
+      width: 145px;
       height: 100%;
     }
-    nav{
-      a{
-        text-decoration: none;
-        font-size: 12px;
-        font-weight: 500;
-        color: #ff6060;
-      }
+    
     }
     .logo {
       height: 100%;
@@ -29,12 +23,13 @@ header {
     }
   
     .menu {
-      width: 250px;
-      display: flex;
-      justify-content: flex-end;
-      gap: 50px;
-
-  
+      display:flex;
+      
+      
+     margin-right: 10px;
+    
     }
 
-  }
+    .accueil {
+      margin-right: 10px; 
+    }

@@ -5,7 +5,7 @@ import "../Styles/accommodation.scss";
 import { data } from "../Data/Datas";
 
 import Collapse from "../Components/Collapse";
-import CardLocation from "../Components/CardLocation";
+
 import CardPictures from "../Components/CardPictures";
 import CardRating from "../Components/CardRating";
 
@@ -25,7 +25,7 @@ function Accommodation() {
         <div className="card__informations">
           <div className="card__title">
             <h2>{card.title}</h2>
-            <CardLocation location={card.location} />
+            <p>{card.location}</p>
           </div>
           <div className="card__host">
             <p>{card.host.name}</p>
