@@ -19,8 +19,8 @@ function CardRating(props) {
 
     return (
         <div className="rating">
-            <ul className="stars-list">
-                <li className="star-item">
+            <ul className="stars__list">
+                <li className="star__item">
                 {stars.map((star, index) => (
                 <img key={index} src={star} alt="star"/>
             ))}

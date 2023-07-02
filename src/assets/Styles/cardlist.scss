@@ -12,55 +12,15 @@
 .card__list-item {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+
   align-items: center;
   justify-content: center;
-  width: 335px;
-  height: 255px;
-  max-height: fit-content;
+
   margin: 10px;
   padding: 10px;
   object-fit:cover;
-  border-radius: 5px;
-  background-color: #F6F6F6;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: 0.5s;
-  cursor: pointer;
 
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  &:active {
-    transform: scale(1.05);
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  a {
-    color: #000000;
-    text-decoration: none;
-
-    &:visited {
-      color: #000000;
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: #000000;
-      text-decoration: none;
-    }
-  }
-
-  &:visited {
-    outline: none;
-    border: none;
-    background-color: #F6F6F6;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+  
 }
 
 .card__list-content {

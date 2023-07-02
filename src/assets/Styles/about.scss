@@ -1,3 +1,5 @@
+@import "./general.scss";
+
 .collapse__wrapper-about {
     width: 100%;
     display: flex;
@@ -6,46 +8,12 @@
     margin-bottom: 30px;
     gap: 30px;
   
-    .collapse {
-      border-radius: 5px;
-      overflow: hidden;
-      position: relative;
-      perspective: 1000px;
+
   
-      .collapse__item {
-        transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-        transform-style: preserve-3d;
+      
   
-        &:not(:first-child) {
-          transform: translateX(100%);
-          opacity: 0;
-        }
-  
-        &.active {
-          transform: translateX(0%);
-          opacity: 1;
-        }
-      }
-    }
-  
-    .collapse__title {
-      border-radius: 5px;
-      overflow: hidden;
-      p {
-        font-size: 24px;
-        font-weight: 400;
-        transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-        transform-origin: top;
-      }
-  
-      &.active {
-        p {
-          transform: translateY(0%);
-        }
-      }
-    }
-  
-    
+      
+      
     }
   
   

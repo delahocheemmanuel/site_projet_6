@@ -1,18 +1,19 @@
 
 import React from "react";
 import { useParams } from "react-router-dom";
-
+import "../Styles/accommodation.scss";
 import { data } from "../Data/Datas";
 
 import Collapse from "../Components/Collapse";
 import CardLocation from "../Components/CardLocation";
 import CardPictures from "../Components/CardPictures";
+import CardRating from "../Components/CardRating";
 
 function Accommodation() {
   const { cardId } = useParams();
   const card = data.find((card) => card.id === cardId);
 
-  console.log(card);
+
 
   return (
     <main>
@@ -31,7 +32,8 @@ function Accommodation() {
             <img src={card.host.picture} alt="Host" />
           </div>
           <div className="card__tags">{card.tags}</div>
-          <div className="card__rating">{card.rating}</div>
+          <CardRating rating={card.rating} />
+          
           <div className="card__description">
             <Collapse
               categoryName="Description"

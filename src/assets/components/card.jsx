@@ -11,7 +11,7 @@ function Card() {
   } else {
     return (
       <div className="card">
-        <div className="card-content">
+        <div className="card__content">
           <img src={card.cover} alt={card.title} />
           <h2>{card.title}</h2>
           <p>{card.description}</p>

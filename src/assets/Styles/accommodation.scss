@@ -1,0 +1,65 @@
+@import "./general.scss";
+
+h1 {
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 10;
+}
+
+p {
+    color: #FF6060;
+    margin: 0;
+}
+
+ul {
+    margin:0;
+    list-style: none;
+    padding: 0;
+}
+
+
+.card__about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.card__informations {
+    
+}
+
+
+.card__title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card__host {
+    display: flex;
+    img{
+        height: 64px;
+        width: 64px;
+        border-radius: 100%;
+    }
+}
+.cards__tags {
+    display: flex;
+    
+}
+.card__description {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.card__equipments {
+    display: flex;
+    
+}
+
+
+
+
