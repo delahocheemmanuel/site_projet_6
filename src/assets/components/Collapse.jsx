@@ -24,7 +24,7 @@ function Collapse(props) {
         </button>
         {activeButton && (
         <div className="collapse__description">
-          <div>{categoryDetails}</div>
+          <div >{categoryDetails}</div>
         </div>
         )}
       </div>

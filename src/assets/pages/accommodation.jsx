@@ -43,9 +43,15 @@ function Accommodation() {
                 />
               </div>
               <div className="card__equipements">
-                <Collapse
+              <Collapse
                   categoryName="Equipements"
-                  categoryDetails={card.equipments}
+                  categoryDetails={
+                    <ul>
+                      {card.equipments.map((equipment) => (
+                        <li key={equipment}>{equipment}</li>
+                      ))}
+                    </ul>
+                  }
                 />
               </div>
             </div>
