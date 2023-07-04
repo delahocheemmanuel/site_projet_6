@@ -18,7 +18,7 @@ function CardRating(props) {
     }
 
     return (
-        <div className="rating">
+        <div className="stars">
             <ul className="stars__list">
                 <li className="star__item">
                 {stars.map((star, index) => (

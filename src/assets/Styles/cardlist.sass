@@ -9,28 +9,23 @@
   align-items: center
   width: 100%
 
-  .card__list-item
+  &--item
     box-sizing: border-box
     display: flex
     flex-wrap: wrap
     align-items: center
     justify-content: center
-    margin: 10px
     padding: 10px
     object-fit: cover
 
-  .card__list-content
-    width: 335px
-    height: 255px
+  &--content
     position: relative
     border-radius: 10px
-
     img
       width: 335px
       height: 255px
       border-radius: 10px
-
-  .card__title
+  &--title
     position: absolute
     bottom: 0
     width: 20%
@@ -40,3 +35,13 @@
     padding-left: 10px
     padding-bottom: 10px
     color: white
+    text-shadow: 0 0 1px black
+@media screen and (min-width: $breakpoint-mobile)
+.card__list
+  &--item
+    padding: 40px
+  &--content
+    img
+      width: 340px
+      height: 340px   
+  

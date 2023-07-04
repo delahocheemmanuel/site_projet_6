@@ -12,12 +12,12 @@ function CardList() {
       {data.map((card) => {
         
         return (
-          <div key={card.id} className="card__list-item">
+          <div key={card.id} className="card__list--item">
             
             <Link to={`/Accommodation/${card.id}`}>
-              <div className="card__list-content">
+              <div className="card__list--content">
                 <img src={card.cover} alt={card.title} />
-                <p className="card__title">{card.title}</p>
+                <p className="card__list--title">{card.title}</p>
               </div>
             </Link>
           </div>
