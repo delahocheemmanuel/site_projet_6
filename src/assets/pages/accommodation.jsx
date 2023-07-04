@@ -28,7 +28,13 @@ function Accommodation() {
               <h2>{card.title}</h2>
               <p>{card.location}</p>
             </div>
-            <div className="card__tags">{card.tags}</div>
+            <div className="card__tags">
+              <ul>
+                {card.tags.map((tag) => (
+                  <li key={tag}>{tag}</li>
+                ))}
+              </ul>
+            </div>
             <div className="card__rating-host">
               <CardRating rating={card.rating} />
               <div className="card__host">
@@ -44,7 +50,7 @@ function Accommodation() {
                 />
               </div>
               <div className="card__equipements">
-              <Collapse
+                <Collapse
                   categoryName="Equipements"
                   categoryDetails={
                     <ul>
