@@ -3,31 +3,42 @@
 .card__about
   display: flex
   width: 100%
-
+  
 .card__informations
   width: 100%
 
-.card__title, .card__title p
+.card__title
   width: 100%
-  font-size: 12px
   font-weight: 500
   color: #ff6060
+  
+  
+  &--title
+    font-size: 18px
+    padding: 5px 5px 5px 0
+  &--location 
+    font-size: 14px
+    padding: 5px 5px 5px 0
 
-.card__title h2
-  font-size: 18px
 
 .card__tags
-  
   ul
     display: flex
+    justify-content: flex-start
     gap: 10px
   li 
-    width: 84px
+    display: flex
+    min-width: 84px
     height: 18px
+    font-size: 10px
     text-align: center
+    align-items: center
+    justify-content: center
     color: #ffffff
     background-color: #ff6060
-    border-radius: 10px
+    border-radius: 5px
+    padding: 0px 20px 0px 20px
+    margin: 10px 10px 10px 0px
 
     
     
@@ -48,17 +59,18 @@
   display: flex
   align-items: center
   justify-content: flex-end
-
-.card__host p
-  font-size: 12px
-  font-weight: 500
-  color: #f06060
-
-.card__host img
-  width: 32px
-  border-radius: 50%
-  margin-left: 10px
-  margin-right: 10px
+  &--name 
+    font-size: 12px
+    font-weight: 500
+    color: #f06060
+    width: 40px
+    display: flex
+    justify-content: flex-end
+  &--image 
+    width: 32px
+    border-radius: 50%
+    margin-left: 10px
+    margin-right: 10px
 
 .card__desc-equip
   display: flex
@@ -82,4 +94,4 @@
     li
       margin-bottom: 10px
 
-      $breakpoint-small:768px
+      

@@ -1,5 +1,4 @@
-
-
+// Reset des styles par défaut
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -9,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video
   margin: 0
@@ -20,8 +19,8 @@ time, mark, audio, video
   font: inherit
   vertical-align: baseline
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+// HTML5 display-role reset pour les anciens navigateurs
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section
   display: block
 
@@ -43,34 +42,45 @@ table
   border-collapse: collapse
   border-spacing: 0
 
+//import Font
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")
-
-* 
-  margin: 0
-  padding: 0
-  box-sizing: border-box
-
-header
-  padding: 10px
-
-body
-  max-width: 1920px
-  margin: auto
-
-section
-  width: 100%
-  padding-left: 20px
-  padding-right: 20px
-
-a
-  text-decoration: none
-  color: #ff6060
 
 $main-font: "Montserrat", sans-serif
 
-$breakpoint-small: 768px
-$breakpoint-medium: 1024px
-$breakpoint-large: 1200px
+//variables  
+  
 
- 
+$primary-color: #ff6060
+$secondary-color: #ffffff
+$breakpoint-mobile: 768px
+$breakpoint-tablet: 1024px
+
+
+
+// Styles de base
+body
+  font-family: montserrat, sans-serif
+  font-size: 16px
+  max-width: 1920px
+  margin: auto
+  color: $primary-color
+header
+  padding: 20px
+section
+  padding: 20px
+  
+  
+  
+  
+h1
+  font-size: 24px
+  margin-bottom: 10px
+a
+  text-decoration: none
+  color: #ff6060
+p
+  line-height: 1.5
+
+
+
 

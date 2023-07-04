@@ -10,7 +10,7 @@ const Header = (props) => {
     return (
         <header>
             <div className="header">
-                <Link to="/"><img src={logo} alt="Logo Kasa" className="logo" /></Link>
+                <Link to="/"><img src={logo} alt="Logo Kasa" className="header__logo" /></Link>
                 <nav className="menu">
                     <Link to="/" className={location.pathname === "/" ? "active" : ""}>{welcome} Accueil</Link>
                     <Link to="/About" className={location.pathname === "/About" ? "active" : ""}>{about} A propos</Link>
