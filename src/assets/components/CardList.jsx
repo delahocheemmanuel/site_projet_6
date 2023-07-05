@@ -16,7 +16,7 @@ function CardList() {
             
             <Link to={`/Accommodation/${card.id}`}>
               <div className="card__list--content">
-                <img src={card.cover} alt={card.title} />
+              <img src={card.cover} alt={`${card.title} - ${card.location}`} />
                 <p className="card__list--title">{card.title}</p>
               </div>
             </Link>

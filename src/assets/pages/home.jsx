@@ -9,6 +9,10 @@ import Footer from '../Components/Footer'
 const Home = () => {
   return (
     <main>
+      <head>
+        <html lang="fr"></html>
+        <title>Kasa | Accueil</title>
+      </head>
       <Header />
       <section>
         <Banner
