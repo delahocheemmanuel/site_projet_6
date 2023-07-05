@@ -2,49 +2,59 @@
 
 .card__pictures
   position: relative
-  
+
   .slide__show
     position: relative
     display: flex
     justify-content: center
     align-items: center
 
-    .slide__show-image
-      position: relative
+    &--image
+      
       width: 100%
       height: 100%
       border-radius: 25px
 
-    .slide__show-button
-      width: 100%
-      top: 50%
-      background-color: transparent
-      border: none
-      cursor: pointer
-
-    .arrow__left
+  .button__arrow
+    width: 100%
+    top: 50%
+    background-color: transparent
+    border: none
+    cursor: pointer
+    
+    &--left
       width: 24px
       position: absolute
+      transform: translateY(-50%)
       left: 0
       margin-left: 40px
-      transform: translateY(-50%)
 
-    .arrow__right
+    &--right  
       width: 24px
       position: absolute
+      transform: translateY(-50%)
       right: 0
       margin-right: 40px
-      transform: translateY(-50%)
 
-    .slide__show-count p
-      position: absolute
-      left: 50%
-      display: flex
-      justify-content: center
-      align-items: center
-      transform: translateX(-50%)
-      bottom: 0
-      color: #ffffff
-      font-size: 1rem
-      font-weight: 500
-      margin-bottom: 15px
+  .slide__show--count p
+    position: absolute
+    left: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: translateX(-50%)
+    bottom: 0
+    color: #ffffff
+    font-size: 1rem
+    font-weight: 500
+    margin-bottom: 15px
+
+@media screen and (min-width: $breakpoint-mobile)
+  .card__pictures
+    .slide__show
+      &--image
+        width: auto
+        height: 415px
+        object-fit: cover
+        object-position: center center
+        

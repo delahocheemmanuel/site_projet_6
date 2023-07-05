@@ -35,15 +35,15 @@ function CardPictures(props) {
     return (
       <div className="card__pictures" >
         <div className="slide__show">
-          <img src={imgSrc[imageIndex]} alt={imgAlt} className="slide__show-image" />
-          <button className="slide__show-button" onClick={previousPicture}>
-            <img src={left} className="arrow__left" alt="arrow-left" />
+          <img src={imgSrc[imageIndex]} alt={imgAlt} className="slide__show--image" />
+          <button className="button__arrow" onClick={previousPicture}>
+            <img src={left} className="button__arrow--left" alt="arrow-left" />
           </button>
-          <button className="slide__show-button" onClick={nextPicture}>
-            <img src={right} className="arrow__right" alt="arrow-right" />
+          <button className="button__arrow" onClick={nextPicture}>
+            <img src={right} className="button__arrow--right" alt="arrow-right" />
           </button>
         
-        <div className="slide__show-count">
+        <div className="slide__show--count">
           <p>
             {imageIndex + 1}/{imgSrc.length}
           </p>
