@@ -1,9 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./assets/Pages/Home";
-import About from "./assets/Pages/About";
-import Error from "./assets/Pages/Error";
-import Accommodation from "./assets/Pages/Accommodation";
+import Home from "../assets/Pages/Home";
+import About from "../assets/Pages/About";
+import Error from "../assets/Pages/Error";
+import Accommodation from "../assets/Pages/Accommodation";
+
+
 
 function App() {
   return (
@@ -20,3 +22,4 @@ function App() {
 }
 
 export default App;
+
