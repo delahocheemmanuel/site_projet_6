@@ -5,15 +5,13 @@ import About from "../assets/Pages/About";
 import Error from "../assets/Pages/Error";
 import Accommodation from "../assets/Pages/Accommodation";
 
-
-
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/error" element={<Error />} />
-      <Route exact path="/accommodation/:cardId" element={<Accommodation />} />
+      <Route path="/" element={<Home />} /> {/* Route pour la page d'accueil */}
+      <Route path="/about" element={<About />} /> {/* Route pour la page "About" */}
+      <Route path="/error" element={<Error />} /> {/* Route pour la page d'erreur */}
+      <Route exact path="/accommodation/:cardId" element={<Accommodation />} /> {/* Route pour la page de l'hébergement avec l'ID de la carte spécifié */}
 
       {/* Route par défaut pour toutes les adresses non spécifiées */}
       <Route path="*" element={<Error />} />
@@ -22,4 +20,5 @@ function App() {
 }
 
 export default App;
+
 

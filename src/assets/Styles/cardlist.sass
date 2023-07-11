@@ -20,7 +20,7 @@
     transition: transform 0.2s ease-in-out
 
     &:hover
-      transform: scale(1.1)
+      transform: scale(1.1) 
 
   &--content
     position: relative
@@ -39,7 +39,8 @@
     padding-left: 10px
     padding-bottom: 10px
     color: #ffffff
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) 
+
     .card__list
       box-sizing: border-box
       display: flex
@@ -60,15 +61,17 @@
     transition: transform 0.2s ease-in-out
 
     &:hover
-      transform: scale(1.1)
+      transform: scale(1.1) 
 
   &--content
     position: relative
     border-radius: 10px
+
     img
       max-width: 335px
       height: 255px
       border-radius: 10px
+
   &--title
     position: absolute
     bottom: 0
@@ -79,24 +82,23 @@
     padding-left: 20px
     padding-bottom: 20px
     color: #ffffff
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)
-    -webkit-text-stroke: 0.2px #000000
-    text-stroke: 0.2px #000000
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5) 
+    -webkit-text-stroke: 0.2px #000000 
+    text-stroke: 0.2px #000000 
     transition: text-shadow 0.2s ease-in-out, transform 0.2s ease-in-out
 
     &:hover 
-      transform: scale(1.2)
+      transform: scale(1.2) 
       transition: text-shadow 0.2s ease-in-out, transform 0.2s ease-in-out
 
 @media screen and (min-width: $breakpoint-mobile)
 .card__list
-  &--title 
-    
+  
   &--item
     margin-top: 30px 
     padding: 10px
+    
   &--content
     img
       width: 340px
-      height: 340px   
-  
+      height: 340px
