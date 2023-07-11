@@ -26,7 +26,7 @@
     position: relative
     border-radius: 10px
     img
-      max-width: 335px
+      width: 335px
       height: 255px
       border-radius: 10px
   &--title
@@ -38,7 +38,7 @@
     text-align: center
     padding-left: 10px
     padding-bottom: 10px
-    color: #ffffff
+    color: $secondary-color
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) 
 
     .card__list
@@ -68,7 +68,7 @@
     border-radius: 10px
 
     img
-      max-width: 335px
+      width: 335px
       height: 255px
       border-radius: 10px
 
@@ -81,7 +81,7 @@
     text-align: center
     padding-left: 20px
     padding-bottom: 20px
-    color: #ffffff
+    color: $secondary-color
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5) 
     -webkit-text-stroke: 0.2px #000000 
     text-stroke: 0.2px #000000 
@@ -92,13 +92,11 @@
       transition: text-shadow 0.2s ease-in-out, transform 0.2s ease-in-out
 
 @media screen and (min-width: $breakpoint-mobile)
-.card__list
-  
-  &--item
-    margin-top: 30px 
-    padding: 10px
-    
-  &--content
-    img
-      width: 340px
-      height: 340px
+  .card__list
+    &--item
+      margin-top: 30px 
+      padding: 10px
+    &--content
+      img
+        width: 340px
+        height: 340px
