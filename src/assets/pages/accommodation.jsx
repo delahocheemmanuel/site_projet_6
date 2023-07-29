@@ -9,6 +9,7 @@ import Collapse from '../Components/Collapse'
 import CardPictures from '../Components/CardPictures'
 import CardRating from '../Components/CardRating'
 
+
 function Accommodation() {
   const { cardId } = useParams() // Obtient l'ID de la carte à partir des paramètres de l'URL
   const card = data.find((card) => card.id === cardId) // Recherche la carte correspondante dans les données
@@ -72,7 +73,6 @@ function Accommodation() {
           </div>
         </div>
       </section>
-
       <Footer /> {/* Affiche le composant Footer */}
     </main>
   )

@@ -7,52 +7,37 @@ function CardPictures(props) {
   const { imgSrc, imgAlt } = props;
   const [imageIndex, setImageIndex] = useState(0);
 
-  function nextPicture() {
-    // Vérifie si l'image actuelle est la dernière de la liste
-    if (imageIndex === imgSrc.length - 1) {
-      setImageIndex(0); // Si oui, revenir à la première image
-    } else {
-      setImageIndex(imageIndex + 1); // Sinon, passer à l'image suivante
-    }
+  function handleNextPicture() {
+    setImageIndex((prevIndex) => (prevIndex + 1) % imgSrc.length);
   }
 
-  function previousPicture() {
-    // Vérifie si l'image actuelle est la première de la liste
-    if (imageIndex === 0) {
-      setImageIndex(imgSrc.length - 1); // Si oui, passer à la dernière image
-    } else {
-      setImageIndex(imageIndex - 1); // Sinon, passer à l'image précédente
-    }
+  function handlePreviousPicture() {
+    setImageIndex((prevIndex) => (prevIndex - 1 + imgSrc.length) % imgSrc.length);
   }
 
-  if (imgSrc.length === 1) {
-    // Si la liste d'images ne contient qu'une seule image
-    return (
+  return (
+    <div className="card__pictures">
       <div className="slide__show">
-        <img src={imgSrc[imageIndex]} alt={imgAlt} className="slide__show-image" />
+        <img src={imgSrc[imageIndex]} alt={imgAlt} className="slide__show--image" />
+        {imgSrc.length > 1 && (
+          // Afficher les flèches de navigation uniquement s'il y a plus d'une image
+          <>
+            <button className="button__arrow" onClick={handlePreviousPicture}>
+              <img src={left} className="button__arrow--left" alt="arrow-left" />
+            </button>
+            <button className="button__arrow" onClick={handleNextPicture}>
+              <img src={right} className="button__arrow--right" alt="arrow-right" />
+            </button>
+          </>
+        )}
       </div>
-    );
-  } else {
-    // Si la liste d'images contient plusieurs images
-    return (
-      <div className="card__pictures">
-        <div className="slide__show">
-          <img src={imgSrc[imageIndex]} alt={imgAlt} className="slide__show--image" />
-          <button className="button__arrow" onClick={previousPicture}>
-            <img src={left} className="button__arrow--left" alt="arrow-left" />
-          </button>
-          <button className="button__arrow" onClick={nextPicture}>
-            <img src={right} className="button__arrow--right" alt="arrow-right" />
-          </button>
-        </div>
-        <div className="slide__show--count">
-          <p>
-            {imageIndex + 1}/{imgSrc.length}
-          </p>
-        </div>
+      <div className="slide__show--count">
+        <p>
+          {imageIndex + 1}/{imgSrc.length}
+        </p>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default CardPictures;

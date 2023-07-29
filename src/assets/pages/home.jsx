@@ -4,6 +4,7 @@ import Header from '../Components/Header'
 import CardList from '../Components/CardList'
 import bannerImage from '../../assets/images/banner/home__banner.jpg'
 import Footer from '../Components/Footer'
+import '../Styles/home.sass'
 
 const Home = () => {
   return (

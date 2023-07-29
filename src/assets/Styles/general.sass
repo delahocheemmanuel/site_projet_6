@@ -12,6 +12,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video
+*
+  box-sizing: border-box
   margin: 0
   padding: 0
   border: 0
@@ -61,13 +63,15 @@ $breakpoint-tablet: 1024px
 body
   font-family: montserrat, sans-serif
   font-size: 16px
-  max-width: 1440px
+  max-width: 2400px
   margin: auto
   color: $primary-color
+  box-sizing: border-box
 header
   padding: 20px
 section
   padding: 20px
+  height: auto
 h1
   font-size: 24px
   margin-bottom: 10px
@@ -80,7 +84,6 @@ p
 @media screen and (min-width: $breakpoint-mobile)
   header
     padding: 20px 95px 0px 95px
-  section
-    padding: 20px 95px 30px 95px
-
+  
+  
 

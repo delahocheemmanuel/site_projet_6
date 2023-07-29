@@ -1,7 +1,15 @@
 @import "./general.sass"
 
 .collapse__wrapper-about
-    padding-top: 60px  
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: auto
+  gap: 5%
+  padding-top: 30px
+
 .collapse
   
   width: 100%
@@ -15,7 +23,6 @@
     background-color: $primary-color
     width: 100%
     height: 45px
-    font-size: 18px
     padding: 5px 20px
     align-items: center
     justify-content: space-between
@@ -24,6 +31,7 @@
 
     p
       margin: 0
+      font-size: 32px
       color: $secondary-color
 
     .collapse__icon
@@ -42,7 +50,7 @@
         transform: rotate(0deg)
 
   .collapse__description
-    font-size: 13px
+    font-size: 24px
     font-weight: 500
     color: $primary-color
     text-align: start
