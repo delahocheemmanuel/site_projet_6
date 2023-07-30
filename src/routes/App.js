@@ -9,7 +9,7 @@ function App() {
   return (
     <Routes>
       {/* Rediriger vers la page d'accueil */}
-      <Route path="/" element={<Navigate to="/Home" />} />
+      <Route path="/site_projet_6" element={<Navigate to="/Home" />} />
 
       <Route path="/home" element={<Home />} /> {/* Route pour la page d'accueil */}
       <Route path="/about" element={<About />} /> {/* Route pour la page "About" */}
